@@ -1,0 +1,31 @@
+{
+  "id": "turnaround",
+  "title": "Turnaround",
+  "description": "Turn a figure around in the image popout. Upload a HeroForge turnaround beside an image, and the image stays a still everywhere else.",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "version": "0.3.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Wizzlethorpe Labs",
+      "url": "https://wizzlethorpe.com"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/turnaround.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ]
+}

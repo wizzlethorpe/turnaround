@@ -1,0 +1,18 @@
+/* Foundry sizes the window to the image alone. Letting the figure shrink keeps the slider inside it. */
+.application.image-popout figure:has(> canvas.turnaround) {
+  min-height: 0;
+}
+
+.application.image-popout figure canvas.turnaround {
+  flex: 1;
+  min-height: 0;
+  object-fit: contain;
+}
+
+/* The track is solid as far as the turnaround has downloaded and faint beyond. */
+.application.image-popout figure input.turnaround {
+  --loaded: 100%;
+  --range-track-color: linear-gradient(to right, var(--input-background-color) var(--loaded), color-mix(in srgb, var(--input-background-color) 35%, transparent) var(--loaded));
+  width: 100%;
+  margin-top: 0.5rem;
+}
